@@ -1,0 +1,14 @@
+Folder ini untuk Google Play Store.
+
+Saat membuat paket Android di PWABuilder.com, kamu mendapat file
+assetlinks.json. Taruh file itu DI FOLDER INI, lalu online-kan lagi folder
+aplikasinya. File itu membuktikan bahwa website dan aplikasi Play Store-mu
+milik orang yang sama, sehingga aplikasinya terbuka tanpa bilah alamat.
+
+Netlify: file _redirects di folder utama sudah membuatnya terbuka di
+https://alamatmu/.well-known/assetlinks.json — tidak perlu apa-apa lagi.
+Hosting lain (GitHub Pages, Cloudflare Pages, cPanel): ganti nama folder ini
+menjadi .well-known (dengan titik di depan).
+
+Cek: buka https://alamatmu/.well-known/assetlinks.json di browser. Harus
+tampil isi file-nya, bukan halaman error.
